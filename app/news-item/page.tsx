@@ -13,7 +13,7 @@ function NewsItemPage({ searchParams }: Props) {
   ) {
     return notFound()
   }
-  console.log(searchParams)
+  console.log(Object.entries(searchParams).length)
 
   const newsItem: NewsEntry = searchParams
 
