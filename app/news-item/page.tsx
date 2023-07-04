@@ -8,7 +8,7 @@ type Props = {
 
 function NewsItemPage({ searchParams }: Props) {
   if (
-    (searchParams && Object.keys(searchParams).length === 0) ||
+    (searchParams && Object.entries(searchParams).length === 0) ||
     !searchParams
   ) {
     return notFound()
